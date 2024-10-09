@@ -2,4 +2,48 @@
 
 Trial or micro-service unit of [PostgreSQL](https://www.postgresql.org/docs/) with [Adminer](https://www.adminer.org/) as Web UI.
 
-For MySQL bootstrapper, checkout the [trial-mysql](https://github.com/kamaslau/trial-mysql).
+For MySQL/MariaDB bootstrapper, checkout the [trial-mysql](https://github.com/kamaslau/trial-mysql).
+
+## Service URL
+
+- Database (PostgreSQL) [http://localhost:5432](http://localhost:5432)
+- Web UI (Adminer) [http://localhost:8081](http://localhost:8081)
+
+## Default user
+
+Default logins should only be used in local/dev environments.
+
+| Username | Password |
+| -------- | -------- |
+| root     | 123456   |
+
+## Usage
+
+### Start with [Docker Compose](https://docs.docker.com/compose/)
+
+```bash
+# Initiate .env file
+cp .env_template .env
+# Start services
+docker compose up -d
+```
+
+Update existing composed containers with latest images:
+
+```bash
+docker compose pull && \
+docker compose down && \
+docker compose up -d
+```
+
+### Further operations
+
+```bash
+# Enter container and initiate shell
+docker exec -it postgres bash
+```
+
+## Relevent Docker images
+
+- [Adminer](https://hub.docker.com/_/adminer)
+- [PostgreSQL](https://hub.docker.com/_/postgres)
