@@ -17,6 +17,8 @@ Default logins should only be used in local/dev environments.
 | -------- | -------- |
 | root     | 123456   |
 
+NOTE: Be sure to pick PostgreSQL for System in Adminer Login form.
+
 ## Usage
 
 ### Start with [Docker Compose](https://docs.docker.com/compose/)
