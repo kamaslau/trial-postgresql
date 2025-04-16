@@ -25,7 +25,7 @@ NOTE: Be sure to pick PostgreSQL for System in Adminer Login form.
 
 ```bash
 # Initiate .env file
-cp .env_template .env
+cp .env.sample .env
 # Start services
 docker compose up -d
 ```
