@@ -55,3 +55,7 @@ services:
       ADMINER_DEFAULT_SERVER: postgres
       ADMINER_DEFAULT_DB: postgres
       ADMINER_DESIGN: dracula
+      # Dev ONLY
+      # ADMINER_SINGLE_USER: "true"
+      # ADMINER_USERNAME: ${POSTGRES_USER:-root}
+      # ADMINER_PASSWORD: ${POSTGRES_PASSWORD}
