@@ -14,7 +14,6 @@ services:
     restart: unless-stopped
     networks:
       - backend
-    env_file: .env
     ports:
       - target: 5432
         published: ${PORT:-5432}
@@ -49,7 +48,6 @@ services:
     networks:
       - backend
       - frontend
-    env_file: .env
     ports:
       - target: 8080
         published: ${PORT_UI:-8081}

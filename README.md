@@ -9,6 +9,8 @@ For MySQL/MariaDB bootstrapper, checkout the [trial-mysql](https://github.com/ka
 - Database (PostgreSQL) [http://localhost:5432](http://localhost:5432)
 - Web UI (Adminer) [http://localhost:8081](http://localhost:8081)
 
+Ports could be changed with .env file, which is instructed underneath.
+
 ## Default user
 
 Default logins should only be used in local/dev environments.
@@ -24,7 +26,7 @@ NOTE: Be sure to pick PostgreSQL for System in Adminer Login form.
 ### Start with [Docker Compose](https://docs.docker.com/compose/)
 
 ```bash
-# Initiate .env file
+# Initiate .env file, Docker Compose will automaticly pick it up
 cp .env.sample .env
 # Start services
 docker compose up -d
